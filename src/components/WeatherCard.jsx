@@ -1,14 +1,16 @@
-const WeatherCard = ({ weatherData }) => {
-    return (
-      <div className="weather-card">
-        <h2>{weatherData.city}</h2>
-        <h3>{weatherData.temperature}°C</h3>
-        <p>{weatherData.condition}</p>
-        <p>Wind: {weatherData.wind} km/h</p>
-        <p>Humidity: {weatherData.humidity}%</p>
-      </div>
-    );
-  };
+import React from 'react';
+
+const WeatherCard = () => {
+  return (
+    <div className="weather-card">
+      <h2>{weather?.location?.name}</h2> {/* City or location name */}
+      <p>Temperature: {weather?.current?.temp_c}°C</p> {/* Current temperature */}
+      <p>Condition: {weather?.current?.condition?.text}</p> {/* Weather condition */}
+      <img src={weather?.current?.condition?.icon} alt="weather icon" /> {/* Weather icon */}
+      <p>Weather Information</p>
+    </div>
+  );
+};
 
 export default WeatherCard;
   

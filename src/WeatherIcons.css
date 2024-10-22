@@ -1,0 +1,23 @@
+.weather-icon {
+    width: 50px;
+    height: 50px;
+    margin: 10px auto;
+  }
+  
+  .weather-sunny {
+    background-image: url('./assets/sunny.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  .weather-cloudy {
+    background-image: url('./assets/cloudy.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  .weather-rainy {
+    background-image: url('./assets/rain.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
